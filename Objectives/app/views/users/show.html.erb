@@ -1,0 +1,12 @@
+<h1>Homepage</h1>
+<br>
+
+<ul>
+  <% @user.goals.each do |goal| %>
+    <li>
+        <%= goal.body %>
+    </li>
+  <% end %>
+</ul>
+
+<a href="<%= new_goal_url %>">New goal</a>
